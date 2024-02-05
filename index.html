@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-    <title>Expence Tracker App</title>
+    <title>Expense Tracker App</title>
 </head>
 <body>
     <div class="container">
-    <h1>Expence Tracker App</h1>
+    <h1>Expense Tracker App</h1>
 
     <form onsubmit="saveToLocalStorage(event)">
         
-    <label>Expence Amount</label>
+    <label>Expense Amount</label>
     <input type="number"  name="amount" id="amount" required/>
 
     <label for="date">Date:</label>
       <input type="date" id="date" required/>
             
-    <label>Description of Expence</label>
+    <label>Description of Expense</label>
     <input type="type" name="description" id="description" required/>
             
     <label>Choose a category</label>
@@ -31,7 +31,7 @@
       <option>Others</option>
       </select>
 
-      <button type="submit">Add Expence</button>
+      <button type="submit">Add Expense</button>
         
       </form>
       <h2>Expenses</h2>
