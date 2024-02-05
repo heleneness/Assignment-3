@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Expense Tracker App</title>
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Expence Tracker App</title>
 </head>
 <body>
-  <div id="root"></div>
-  <div class="container">
-    <h1>Expense Tracker App</h1>
-    <form>
-      <label for="expenseTitle">Expense Title:</label>
-      <input type="text" id="expenseTitle" required>
-      
-      <label for="expenseAmount">Amount:</label>
-      <input type="number" id="expenseAmount" required>
-      
-      <label for="expenseDate">Date:</label>
-      <input type="date" id="expenseDate" required>
-      
-      <label for="expenseCategory">Category:</label>
-      <select id="expenseCategory">
-        <option value="">Select Category</option>
-        <option value="housing">Housing</option>
-        <option value="grocery">Grocery</option>
-        <option value="transportation">Transportation</option>
-        <option value="clothes">Clothes</option>
-        <option value="other">Other</option>
+    <div class="container">
+    <h1>Expence Tracker App</h1>
+
+    <form onsubmit="saveToLocalStorage(event)">
+        
+    <label>Expence Amount</label>
+    <input type="number"  name="amount" id="amount" required/>
+
+    <label for="expenseDate">Date:</label>
+      <input type="date" id="expenseDate" required/>
+            
+    <label>Description of Expence</label>
+    <input type="type" name="description" id="description" required/>
+            
+    <label>Choose a category</label>
+    <select name="categories" id="categories" required>
+      <option value="">Select Category</option>
+      <option>Housing</option>
+      <option>Grocery</option>
+      <option>Transportation</option>
+      <option>Clothes</option>
+      <option>Others</option>
       </select>
+
+      <button type="submit">Add Expence</button>
+        
+      </form>
+      <h2>Expenses</h2>
+      <ul id="expenseList"></ul>
       
-      <button type="submit">Add Expense</button>
-    </form>
-    
-    <h2>Expenses</h2>
-    <ul id="expenseList">
-
-    </ul>
-    
-    <h2>Total Expenses: <span id="totalExpenses">$0.00</span></h2>
-  </div>
-
-  <script src="/js/script.js"></script>
+      <h2>Total Expenses: <span id="totalExpenses">€0.00</span></h2>
+       
+      <ul id='listOfItems' style="text-align: center;" class="items"></ul>
+      
+      <script src="/js/scripts.js"></script>
+    </div>
 </body>
 </html>
