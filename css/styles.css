@@ -1,0 +1,98 @@
+* {
+	--background: #dae4e5;
+	--form: #94c0c2;
+	--button: #296e6b;
+	--border: #69a4a2;
+	--font-form: #2b4a4a;
+	--font-shadow: #0b1313;
+}
+
+body {
+	font-family: 'Courier New', Courier, monospace;
+	margin: 0;
+	padding: 0;
+	background-color: var(--background);
+  }
+
+  .container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+  }
+
+  h1 {
+	text-align: center;
+	color: var(--font-shadow);
+  }
+
+
+  /* Styles for form */
+
+  form {
+	background-color: var(--form);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0.5px 0.5px var(--font-shadow);
+  }
+
+  label {
+	display: block;
+	margin-bottom: 10px;
+	color: var(--font-form);
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  input[type="type"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid var(--border);
+	border-radius: 5px;
+	box-sizing: border-box;
+  }
+
+
+  select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid var(--border);
+	border-radius: 5px;
+	box-sizing: border-box;
+  }
+
+
+  /* Button */
+
+  button[type="submit"] {
+	width: 100%;
+	padding: 10px;
+	background-color: var(--button);
+	color: var(--background);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+
+
+  /* Styles for expenses list */
+
+  ul {
+	list-style-type: none;
+	padding: 0;
+  }
+
+  li {
+	background-color: var(--form);
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0.5px 0.5px var(--font-shadow);
+	word-spacing: 1rem;
+  }
+
+
+
+  
