@@ -15,7 +15,7 @@ body {
   }
 
   .container {
-	max-width: 800px;
+	max-width: 70%;
 	margin: 0 auto;
 	padding: 20px;
   }
@@ -53,9 +53,14 @@ body {
 	box-sizing: border-box;
   }
 
+  textarea:focus, input:focus, select:focus{
+    outline: none;
+}
 
   select {
+	font-size: 16px;
 	width: 100%;
+	height: 40px;
 	padding: 10px;
 	margin-bottom: 20px;
 	border: 1px solid var(--border);
@@ -91,8 +96,112 @@ body {
 	border-radius: 5px;
 	box-shadow: 0 0.5px 0.5px var(--font-shadow);
 	word-spacing: 1rem;
+	text-align: center;
   }
 
 
+  /* Bouncing Money bag */
+
+  .spiner-container{
+	width: 100px;
+	height:100px;
+	position: relative;
+  }
+
+  svg {
+	animation: moneybags 3s infinite;
+	width:100px;
+	height:100px;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -5%, 0%);
+  }
+
+  .dollar {
+	animation: inout 1s infinite linear forwards running;
+	perspective: 1000px;
+	transform-origin: center;
+	fill: #000;
+  }
+
+  .dori {
+	perspective: 1000px;
+	transform-origin: center;
+	transform: scale(0.91);
+	animation: inouts 1.2s infinite linear running forwards;
+  }
+
+  @keyframes moneybag {
+	0% { fill: var(--background); }
+	10% { fill: var(--form); }
+	20% { fill: var(--form); }
+	30% { fill: var(--form); }
+	40% { fill: var(--form); }
+	50% { fill: var(--form); }
+  }
+  
+  @keyframes zizo {
+	0% { transform: scale(1.05,1.05); }
+	50% { transform: scale(1.1,1.1); }
+	100% { transform: scale(1,1); }
+  }
+  
+
+  @keyframes dollar {
+	100% { transform: scale(-1,1)}
+	
+  }
+  
+  path.bottom_part {
+	transform-origin: center;
+	position: relative;
+	animation: bounces 1.1s infinite normal forwards linear running;
+  }
+  
+  
+  path.up_part {
+	transform-origin: center;
+	transform: scale(1.1);
+	animation: inout 1.1s infinite normal forwards linear running;
+  }
+
+ @keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+  
+  @keyframes inout {
+	0% {
+	  animation-timing-function: cubic-bezier(0.9647,0.2413,-0.0705,0.7911);
+	  transform: scale(0.9099999999999999);
+	}
+	51% {
+	  animation-timing-function: cubic-bezier(0.9226,0.2631,-0.0308,0.7628);
+	  transform: scale(1.02994);
+	}
+	100% {
+	  transform: scale(0.9099999999999999);
+	}
+  }
+  
+  @keyframes bounce {
+	0% {
+	  width: 75px !important;
+	}
+	51% {
+	  width: 50px !important;
+	}
+	100% {
+	  width: 75px !important;
+	}
+  }
+  
 
   
