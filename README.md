@@ -7,3 +7,5 @@ Only html, css and javascript.
 
 Colors from colorpalettes.net
 SVG : w3.org/2000/svg - animation
+
+Link to Netlify: 
