@@ -8,4 +8,6 @@ Only html, css and javascript.
 Colors from colorpalettes.net
 SVG : w3.org/2000/svg - animation
 
+Link to GutHub: https://github.com/heleneness/Assignment-3.git
+
 Link to Netlify: https://coruscating-crostata-c83e7e.netlify.app
